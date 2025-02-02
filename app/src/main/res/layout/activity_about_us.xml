@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".AboutUsActivity">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:onClick="onBackPressed"
+        android:src="@drawable/backbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+    <!-- Person 1 Info Card with Image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/person1_info_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Person 1 Image -->
+            <ImageView
+                android:id="@+id/person1_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/amzar"
+            android:contentDescription="Person 1 Image"/>
+
+            <!-- Person 1 Info Text -->
+            <TextView
+                android:id="@+id/person1_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: AHMAD AMZAR BIN ABDUL RAHIM\nStudent ID: 2022455324\nGroup: CDCS2405C\nProgramme Code: CDCS240"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Person 2 Info Card with Image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/person2_info_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/person1_info_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Person 2 Image -->
+            <ImageView
+                android:id="@+id/person2_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/hafiz"
+            android:contentDescription="Person 2 Image"/>
+
+            <!-- Person 2 Info Text -->
+            <TextView
+                android:id="@+id/person2_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: MUHAMMAD HAFIZ BIN ABDUL HAKIM\nStudent ID: 2022646906\nGroup: CDCS2405C\nProgramme Code: CDCS240"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Person 3 Info Card with Image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/person3_info_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/person2_info_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Person 3 Image -->
+            <ImageView
+                android:id="@+id/person3_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/hilmi"
+            android:contentDescription="Person 3 Image"/>
+
+            <!-- Person 3 Info Text -->
+            <TextView
+                android:id="@+id/person3_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: MUHAMMAD HILMI BIN MD ZULKEFLEE\nStudent ID: 2022495058\nGroup: CDCS2405C\nProgramme Code: CDCS240"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Person 4 Info Card with Image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/person4_info_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/person3_info_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Person 4 Image -->
+            <ImageView
+                android:id="@+id/person4_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/hadi"
+            android:contentDescription="Person 4 Image"/>
+
+            <!-- Person 4 Info Text -->
+            <TextView
+                android:id="@+id/person4_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: AKMAL HADI BIN AHMAD               \nStudent ID: 2022821384\nGroup: CDCS2405C\nProgramme Code: CDCS240"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

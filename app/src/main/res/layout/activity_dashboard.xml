@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".Dashboard">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcome_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Welcome"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Centered Logo -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:layout_below="@id/welcome_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button Grid -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_image"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:rowCount="3">
+
+        <!-- List of Services -->
+        <Button
+            android:id="@+id/btn_services"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#6200EE"
+            android:text="List of Services"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Book Appointment -->
+        <Button
+            android:id="@+id/btn_appointment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#606868"
+            android:text="Book Appointment"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- View Appointment -->
+        <Button
+            android:id="@+id/btn_view_appointment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF6200EE"
+            android:text="View Appointment"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Profile -->
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Profile"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- About Us -->
+        <Button
+            android:id="@+id/btn_about_us"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#9C27B0"
+            android:text="About Us"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Branch Location -->
+        <Button
+            android:id="@+id/btn_branch_locations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#964B00"
+            android:text="Branch Locations"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </GridLayout>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F44336"
+        android:text="Logout"
+        android:textSize="20sp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
